@@ -7,7 +7,8 @@ app.use(bodyParser.urlencoded({extended:true}))
 
 app.listen(process.env.PORT || 3000,function(){
   console.log("server running");
-})
+});
+
 
 app.get("/",function(req,res){
 res.sendFile(__dirname+"/index.html")
